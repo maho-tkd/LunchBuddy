@@ -11,7 +11,7 @@ $ npm i
 $ npm run build
 
 # バックエンドとフロントエンドをデプロイ
-$ amplify  publish
+$ amplify publish
 ```
 
 ## ディレクトリ構成
@@ -33,3 +33,8 @@ project-root/
 ├── package.json                   # フロントエンドの依存関係
 └── README.md                      # プロジェクト概要
 ```
+
+
+# 利用方法
+アプリ：https://d2u2m5k0sq6pri.cloudfront.net/
+API：https://q1vmi7h4m4.execute-api.us-east-1.amazonaws.com
