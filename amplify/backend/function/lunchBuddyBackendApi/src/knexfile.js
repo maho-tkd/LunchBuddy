@@ -14,11 +14,11 @@ module.exports = {
         rejectUnauthorized: false,
       },
     },
-    // migrations: {
-    //   directory: "./db/migrations",
-    // },
-    // seeds: {
-    //   directory: "./db/seeds",
-    // },
+    migrations: {
+      directory: "./db/migrations",
+    },
+    seeds: {
+      directory: "./db/seeds",
+    },
   },
 };
