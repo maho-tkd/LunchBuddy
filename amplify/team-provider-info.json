@@ -15,7 +15,7 @@
       "function": {
         "lunchBuddyBackendApi": {
           "deploymentBucketName": "amplify-lunchbuddy-dev-efcdc-deployment",
-          "s3Key": "amplify-builds/lunchBuddyBackendApi-572f79726c4e486f6531-build.zip"
+          "s3Key": "amplify-builds/lunchBuddyBackendApi-6e395358436c2b564b75-build.zip"
         }
       },
       "api": {

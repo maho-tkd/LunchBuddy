@@ -1,3 +1,13 @@
 {
-  "lambdaLayers": []
+  "lambdaLayers": [],
+  "VPCConfig": {
+    "VpcId": "vpc-0a22970216d13f3dc",
+    "SubnetIds": [
+      "subnet-01633b16a5c86eb9a"
+    ],
+    "SecurityGroupIds": [
+      "sg-0b274804c6fde0dd8"
+    ]
+  },
+  "permissions": {}
 }
