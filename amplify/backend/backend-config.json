@@ -1,0 +1,49 @@
+{
+  "api": {
+    "backendApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "lunchBuddyBackendApi"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "lunchBuddyBackendApi": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "providerPlugin": "awscloudformation",
+      "service": "S3AndCloudFront"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_lunchBuddyBackendApi_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lunchBuddyBackendApi"
+        }
+      ]
+    },
+    "AMPLIFY_function_lunchBuddyBackendApi_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lunchBuddyBackendApi"
+        }
+      ]
+    }
+  }
+}

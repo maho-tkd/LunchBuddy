@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/requests": {
+      "name": "/requests",
+      "lambdaFunction": "lunchBuddyBackendApi",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

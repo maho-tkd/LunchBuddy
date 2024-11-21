@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lunchbuddy-dev-efcdc-authRole",
+      "UnauthRoleArn": "arn:aws:iam::908027386854:role/amplify-lunchbuddy-dev-efcdc-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::908027386854:role/amplify-lunchbuddy-dev-efcdc-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-lunchbuddy-dev-efcdc-deployment",
+      "UnauthRoleName": "amplify-lunchbuddy-dev-efcdc-unauthRole",
+      "StackName": "amplify-lunchbuddy-dev-efcdc",
+      "StackId": "arn:aws:cloudformation:us-east-1:908027386854:stack/amplify-lunchbuddy-dev-efcdc/912fee30-a7c8-11ef-aa9a-0affc7938aed",
+      "AmplifyAppId": "d2enwmup4uuds0"
+    },
+    "categories": {
+      "function": {
+        "lunchBuddyBackendApi": {
+          "deploymentBucketName": "amplify-lunchbuddy-dev-efcdc-deployment",
+          "s3Key": "amplify-builds/lunchBuddyBackendApi-572f79726c4e486f6531-build.zip"
+        }
+      },
+      "api": {
+        "backendApi": {}
+      },
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
+    }
+  }
+}
