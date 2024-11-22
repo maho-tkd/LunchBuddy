@@ -101,26 +101,6 @@ const Signup = () => {
           required={true}
           onChange={setOfficeId}
         />
-        {/* <div>
-          <FormControl required margin="normal" className={style.selectField}>
-            <InputLabel id="office-label">オフィス</InputLabel>
-            <Select
-              labelId="office-label"
-              id="office"
-              value={officeId}
-              onChange={(e) => setOfficeId(e.target.value)}
-            >
-              <MenuItem value="">
-                <em>選択してください</em>
-              </MenuItem>
-              {offices.map((office) => (
-                <MenuItem key={office.id} value={office.id}>
-                  {office.name}
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
-        </div> */}
         <CustomeTextField
           label="フロア"
           value={floor}
