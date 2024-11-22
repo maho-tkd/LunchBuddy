@@ -29,7 +29,7 @@ const RequestSend = () => {
       { item: "お茶", price: 600, image: "image6" },
     ];
 
-    //画像処理(sprint.react参照。utilsフォルダを作ってindex.jsを作成)
+    //画像処理(sprint.react参照)
 
     // const fetchMenuList = async() => {
     //   try {
@@ -123,21 +123,7 @@ const RequestSend = () => {
 
   return <>
       <h2>メニュー</h2>
-
-        {/* <Grid container display="flex" justifyContent="space-between" alignItems="center">
-            { menuList && menuList.map ((menu, index) => {
-                return (
-                  <Grid item size={6}  key={index}>
-                    <Card className={clsx(style.MenuCard)}> 
-                      { menu.item }<br></br>
-                      { menu.image }
-                  </Card>
-                  </Grid>
-                )
-              })
-            }
-          </Grid> */}
-        
+      
       <OrderCard
         menuList={ menuList }
         onClick={ selectMenu }
@@ -151,19 +137,6 @@ const RequestSend = () => {
         onClick={ selectGratitude }
         isGratitudeSelected={selectedGratitude}
       />
-
-      {/* <Grid container display="flex" justifyContent="space-between" alignItems="center">
-        { gratitudeList && gratitudeList.map ((gratitude, index) => {
-            return (
-              <Grid item size={4}  key={index}>
-                <Card className={clsx(style.GratitudeCard)}> 
-                  { "~" + gratitude + "円"} 
-              </Card>
-              </Grid>
-            )
-          })
-        }
-      </Grid> */}
 
       <div className={clsx(style.maxPrice)}>
         <div className={clsx(style.maxPriceTag)}>
