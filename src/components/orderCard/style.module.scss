@@ -1,0 +1,23 @@
+.MenuCard{
+    width: 140px;
+    height: 140px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 5px 5px 10px #b2b2b2 !important;
+}
+
+.GratitudeCard{
+    width: 100px;
+    height: 35px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SelectedCard {
+    background-color: white !important;
+    box-shadow:  0px 0px 5px 5px #bbb inset !important; 
+}
