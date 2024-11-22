@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import CustomeButton from "../../components/customeButton";
 import { useNavigate } from 'react-router-dom';
+import { Button, TextField, Typography, Paper, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import style from './style.module.scss';
 
 const Signup = () => {
   const [name , setName] = useState(""); //氏名
@@ -87,77 +89,84 @@ const Signup = () => {
 
 
   return (
-    <div>
-      <h2>アカウント登録</h2>
+    <div className={style.container}>
+      <Typography variant="h4" className={style.title}>
+        LunchBuddy
+      </Typography>
+      <Paper elevation={4} className={style.formContainer}>
+        <Typography variant="h6" className={style.formTitle}>
+          アカウント登録
+        </Typography>
       <form onSubmit={handleSubmit}>
       <div>
-          <label htmlFor="name">氏名</label>
-          <input
-            type="text" 
-            id="name" 
+          <TextField
+            label="氏名"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            margin="normal"
           />
       </div>
       <div>
-          <label htmlFor="password">パスワード</label>
-          <input
-            type="password" 
-            id="password" 
+          <TextField
+            label="パスワード"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            type="password"
             required
+            margin="normal"
           />
       </div>
       <div>
-          <label htmlFor="office">オフィス</label>
-          <select
-            id="office"
-            value={officeId}
-            onChange={(e) => setOfficeId(e.target.value)}
-            required
-          >
-            <option value="">選択してください</option>
-            {offices.map((office) => (
-              <option key={office.id} value={office.id}>
-                {office.name}
-              </option>
-            ))}
-          </select>
-        </div>
+            <FormControl required margin="normal" className = {style.selectField}>
+              <InputLabel id="office-label">オフィス</InputLabel>
+              <Select
+                labelId="office-label"
+                id="office"
+                value={officeId}
+                onChange={(e) => setOfficeId(e.target.value)}
+              >
+                <MenuItem value="">
+                  <em>選択してください</em>
+                </MenuItem>
+                {offices.map((office) => (
+                  <MenuItem key={office.id} value={office.id}>
+                    {office.name}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+     </div>
       <div>
-          <label htmlFor="name">フロア</label>
-          <input
-            type="text" 
-            id="floor" 
+          <TextField
+            label="フロア"
             value={floor}
             onChange={(e) => setFloor(e.target.value)}
             required
+            margin="normal"
           />
       </div>
       <div>
-          <label htmlFor="seat">座席</label>
-          <input
-            type="text" 
-            id="seat" 
+          <TextField
+            label="座席"
             value={seat}
             onChange={(e) => setSeat(e.target.value)}
             required
+            margin="normal"
           />
       </div>
       <div>
-          <label htmlFor="phonenumber">電話番号</label>
-          <input
-            type="tel" 
-            id="phonenumber" 
+          <TextField
+            label="電話番号"
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
             required
+            margin="normal"
           />
       </div>
-      <button type="submit">登録</button>
+      <CustomeButton text="登録" onClick={handleSubmit} />
       </form>
+      </Paper>
     </div>
   );
 };
